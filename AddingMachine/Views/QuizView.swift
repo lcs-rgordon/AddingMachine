@@ -9,6 +9,8 @@ import SwiftUI
 
 struct QuizView: View {
     
+    @State var firstNumber = Int.random(in: 1...25)
+    @State var secondNumber = Int.random(in: 1...25)
     @State var answerGiven = ""
     
     var body: some View {
@@ -18,15 +20,15 @@ struct QuizView: View {
             VStack {
                 HStack {
                     Spacer()
-                    Text("12")
+                    Text("\(firstNumber)")
                         .font(.custom("Helvetica", size: 96.0))
                 }
                 HStack {
-                    Spacer()
-                    
                     Text("+")
                     
-                    Text("15")
+                    Spacer()
+                    
+                    Text("\(secondNumber)")
                 }
                 .font(.custom("Helvetica", size: 96.0))
 
