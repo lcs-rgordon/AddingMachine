@@ -11,6 +11,7 @@
 		81AA84BE2B4F18E5002F5025 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81AA84BD2B4F18E5002F5025 /* Assets.xcassets */; };
 		81AA84C12B4F18E5002F5025 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81AA84C02B4F18E5002F5025 /* Preview Assets.xcassets */; };
 		81AA84CB2B4F1980002F5025 /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AA84CA2B4F1980002F5025 /* QuizView.swift */; };
+		81AA84CD2B4F20A9002F5025 /* AnswerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AA84CC2B4F20A9002F5025 /* AnswerState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		81AA84C02B4F18E5002F5025 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		81AA84C22B4F18E5002F5025 /* AddingMachine.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AddingMachine.entitlements; sourceTree = "<group>"; };
 		81AA84CA2B4F1980002F5025 /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
+		81AA84CC2B4F20A9002F5025 /* AnswerState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 		81AA84C92B4F192E002F5025 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				81AA84CC2B4F20A9002F5025 /* AnswerState.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -155,6 +158,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81AA84CD2B4F20A9002F5025 /* AnswerState.swift in Sources */,
 				81AA84BA2B4F18E4002F5025 /* AddingMachineApp.swift in Sources */,
 				81AA84CB2B4F1980002F5025 /* QuizView.swift in Sources */,
 			);
