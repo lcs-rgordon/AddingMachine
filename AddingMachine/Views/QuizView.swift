@@ -34,7 +34,7 @@ struct QuizView: View {
                     Text("\(secondNumber)")
                 }
                 .font(.custom("Helvetica", size: 96.0))
-
+                
                 Divider()
                 
                 HStack {
@@ -45,7 +45,7 @@ struct QuizView: View {
                         .multilineTextAlignment(.trailing)
                 }
                 .font(.custom("Helvetica", size: 96.0))
-
+                
                 HStack {
                     Spacer()
                     
@@ -55,6 +55,14 @@ struct QuizView: View {
                     }, label: {
                         Text("Submit")
                     })
+                    
+                    Button(action: {
+                        // Check answer
+                        newQuestion()
+                    }, label: {
+                        Text("New Question")
+                    })
+                    
                 }
             }
             
@@ -80,6 +88,13 @@ struct QuizView: View {
         } else {
             result = .incorrect
         }
+    }
+    
+    func newQuestion() {
+        firstNumber = Int.random(in: 1...25)
+        secondNumber = Int.random(in: 1...25)
+        answerGiven = ""
+        result = .noInputGiven
     }
 }
 
