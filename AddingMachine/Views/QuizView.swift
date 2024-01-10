@@ -8,10 +8,32 @@
 import SwiftUI
 
 struct QuizView: View {
+    
+    
     var body: some View {
         HStack {
-            Text("Quiz interface")
             
+            // Quiz interface
+            VStack {
+                HStack {
+                    Spacer()
+                    Text("12")
+                        .font(.custom("Helvetica", size: 96.0))
+                }
+                HStack {
+                    Spacer()
+                    
+                    Text("+")
+                    
+                    Text("15")
+                }
+                .font(.custom("Helvetica", size: 96.0))
+
+                Divider()
+                
+            }
+            
+            // List of past questions tried
             Text("History")
         }
         .frame(width: 800, height: 400)
