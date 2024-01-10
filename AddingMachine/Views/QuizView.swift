@@ -20,7 +20,7 @@ struct QuizView: View {
         HStack {
             
             // Quiz interface
-            VStack {
+            VStack(spacing: 10) {
                 HStack {
                     Spacer()
                     Text("\(firstNumber)")
@@ -37,15 +37,21 @@ struct QuizView: View {
 
                 Divider()
                 
-                TextField("Answer", text: $answerGiven)
-                    .font(.custom("Helvetica", size: 96.0))
-                    .multilineTextAlignment(.trailing)
-                
+                HStack {
+                    Text(result.rawValue)
+                        .padding(20)
+                    
+                    TextField("Answer", text: $answerGiven)
+                        .multilineTextAlignment(.trailing)
+                }
+                .font(.custom("Helvetica", size: 96.0))
+
                 HStack {
                     Spacer()
                     
                     Button(action: {
                         // Check answer
+                        checkAnswer()
                     }, label: {
                         Text("Submit")
                     })
